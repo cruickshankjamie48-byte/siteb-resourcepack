@@ -1,5 +1,6 @@
 {
 	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "siteb:item/qol/votenote/votenote"
@@ -22,23 +23,21 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [0, 90, 0],
-			"translation": [-2, 0, 0],
+			"translation": [0, 2, 0.5],
 			"scale": [0.25, 0.25, 0.5]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [0, 90, 0],
-			"translation": [-2, 0, 0],
+			"translation": [0.25, 2, 0.5],
 			"scale": [0.25, 0.25, 0.5]
 		},
 		"firstperson_righthand": {
 			"rotation": [-17, 128, 25],
-			"translation": [1.13, 3.2, -1.12],
+			"translation": [1.13, 3.2, -0.62],
 			"scale": [0.3, 0.3, 1]
 		},
 		"firstperson_lefthand": {
 			"rotation": [-17, 128, 25],
-			"translation": [1.13, 3.2, -1.12],
+			"translation": [1.13, 3.2, -0.62],
 			"scale": [0.3, 0.3, 1]
 		},
 		"ground": {
