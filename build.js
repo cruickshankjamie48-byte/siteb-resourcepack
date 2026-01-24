@@ -61,28 +61,30 @@ function walk(dir) {
 }
 
 function zipFolder() {
-	console.log("Zipping…");
+	console.log("Zipping with 7-Zip (max compression)…");
 
-	if (process.platform === "win32") {
-		// PowerShell is present on modern Windows
-		const ps = spawnSync(
-			"powershell",
-			[
-				"-NoProfile",
-				"-Command",
-				`Compress-Archive -Path "${OUT}\\*" -DestinationPath "${ZIP}" -Force`
-			],
-			{ stdio: "inherit" }
-		);
-		if (ps.status !== 0) throw new Error("PowerShell zip failed");
-	} else {
-		// macOS / Linux
-		const zip = spawnSync(
-			"zip",
-			["-r", ZIP, "."],
-			{ cwd: OUT, stdio: "inherit" }
-		);
-		if (zip.status !== 0) throw new Error("zip command failed");
+	const result = spawnSync(
+		"7z",
+		[
+			"a",              // add to archive
+			"-tzip",          // zip format (Minecraft-compatible)
+			"-mx=9",          // maximum compression
+			"-mfb=258",       // max number of fast bytes (better compression)
+			"-mpass=15",      // multiple compression passes
+			ZIP,              // output zip file
+			"."               // archive contents
+		],
+		{
+			cwd: OUT,
+			stdio: "inherit"
+		}
+	);
+
+	if (result.error) {
+		throw new Error("7-Zip not found on PATH");
+	}
+	if (result.status !== 0) {
+		throw new Error("7-Zip compression failed");
 	}
 }
 
