@@ -2,78 +2,309 @@
   "model": {
     "type": "minecraft:select",
     "property": "minecraft:component",
-    "component": "minecraft:writable_book_content",
-		"fallback": {
-			"type": "minecraft:model",
-			"model": "minecraft:item/writable_book"
-		},
+    "component": "minecraft:lore",
     "cases": [
       {
-        "when": {
-          "pages": [{"raw": "painting\nDino Bath" }]
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "Admin Book",
+                "color": "dark_red",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              }
+            ]
+          }
+        ],
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:component",
+          "component": "minecraft:writable_book_content",
+          "cases": [
+            {
+              "when": {
+                "pages": [
+                  {
+                    "raw": "Big Cake"
+                  }
+                ]
+              },
+              "model": {
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "siteb:item/decoration/display_foods/big_cake/big_cake"
+                },
+                "cases": [
+                  {
+                    "when": [
+                      "gui",
+                      "ground"
+                    ],
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "siteb:item/decoration/display_foods/big_cake/big_cake_gui"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/writable_book"
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:writable_book_content",
+      "cases": [
+        {
+          "when": {
+            "pages": [
+              {
+                "raw": "painting\nDino Bath"
+              }
+            ]
+          },
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "siteb:item/decoration/paintings/1x2/dino_bath"
+            },
+            "cases": [
+              {
+                "when": [
+                  "gui",
+                  "ground"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "siteb:item/decoration/paintings/painting_gui"
+                }
+              }
+            ]
+          }
         },
-				"model": {
-					"type": "minecraft:select",
-					"property": "minecraft:display_context",
-					"fallback": {
-						"type": "minecraft:model",
-						"model": "siteb:item/decoration/paintings/1x2/dino_bath"
-					},
-					"cases": [
-						{
-							"when": ["gui", "ground"],
-							"model": {
-								"type": "minecraft:model",
-								"model": "siteb:item/decoration/paintings/painting_gui"
-							}
-						}
-					]
-				}
-      },
-			{
-				"when": {
-					"pages": [{"raw": "painting\nTechno Pond" }]
-				},
-				"model": {
-					"type": "minecraft:select",
-					"property": "minecraft:display_context",
-					"fallback": {
-						"type": "minecraft:model",
-						"model": "siteb:item/decoration/paintings/3x2/techno_pond"
-					},
-					"cases": [
-						{
-							"when": ["gui", "ground"],
-							"model": {
-								"type": "minecraft:model",
-								"model": "siteb:item/decoration/paintings/painting_gui"
-							}
-						}
-					]
-				}
-			},
-			{
-				"when": {
-					"pages": [{"raw": "Big Cake" }]
-				},
-				"model": {
-					"type": "minecraft:select",
-					"property": "minecraft:display_context",
-					"fallback": {
-						"type": "minecraft:model",
-						"model": "siteb:item/decoration/big_cake/big_cake"
-					},
-					"cases": [
-						{
-							"when": ["gui", "ground"],
-							"model": {
-								"type": "minecraft:model",
-								"model": "siteb:item/decoration/big_cake/big_cake_gui"
-							}
-						}
-					]
-				}
-			}
-		]
+        {
+          "when": {
+            "pages": [
+              {
+                "raw": "painting\nTechno Pond"
+              }
+            ]
+          },
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "siteb:item/decoration/paintings/3x2/techno_pond"
+            },
+            "cases": [
+              {
+                "when": [
+                  "gui",
+                  "ground"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "siteb:item/decoration/paintings/painting_gui"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "when": {
+            "pages": [
+              {
+                "raw": "painting\nBoat"
+              }
+            ]
+          },
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "siteb:item/decoration/paintings/2x2/a_boat"
+            },
+            "cases": [
+              {
+                "when": [
+                  "gui",
+                  "ground"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "siteb:item/decoration/paintings/painting_gui"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "when": {
+            "pages": [
+              {
+                "raw": "painting\nForest"
+              }
+            ]
+          },
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "siteb:item/decoration/paintings/3x3/forest"
+            },
+            "cases": [
+              {
+                "when": [
+                  "gui",
+                  "ground"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "siteb:item/decoration/paintings/painting_gui"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "when": {
+            "pages": [
+              {
+                "raw": "painting\nLonely Tree"
+              }
+            ]
+          },
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "siteb:item/decoration/paintings/3x3/lonely_tree"
+            },
+            "cases": [
+              {
+                "when": [
+                  "gui",
+                  "ground"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "siteb:item/decoration/paintings/painting_gui"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "when": {
+            "pages": [
+              {
+                "raw": "painting\nStarry Night"
+              }
+            ]
+          },
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "siteb:item/decoration/paintings/1x2/starry_night"
+            },
+            "cases": [
+              {
+                "when": [
+                  "gui",
+                  "ground"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "siteb:item/decoration/paintings/painting_gui"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "when": {
+            "pages": [
+              {
+                "raw": "painting\nPyramid"
+              }
+            ]
+          },
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "siteb:item/decoration/paintings/2x2/pyramid"
+            },
+            "cases": [
+              {
+                "when": [
+                  "gui",
+                  "ground"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "siteb:item/decoration/paintings/painting_gui"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "when": {
+            "pages": [
+              {
+                "raw": "Big Cake"
+              }
+            ]
+          },
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "siteb:item/decoration/display_foods/big_cake/big_cake"
+            },
+            "cases": [
+              {
+                "when": [
+                  "gui",
+                  "ground"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "siteb:item/decoration/display_foods/big_cake/big_cake_gui"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/writable_book"
+      }
+    }
   }
 }

@@ -26,44 +26,44 @@
           "model": "siteb:item/decoration/rings/aero_engagment_ring"
         }
       },
-			{
-				"when": [
-					[
-						{
-							"text": "",
-							"extra": [
-								{
-									"text": "ʙɪɢɢᴇꜱᴛ ᴄᴀᴛᴄʜ ꜰᴏʀ ᴛʜᴇ ʙɪɢɢᴇꜱᴛ ᴄʜᴀᴍᴘ",
-									"color": "#7B819F",
-									"bold": false,
-									"italic": true,
-									"underlined": false,
-									"strikethrough": false,
-									"obfuscated": false
-								}
-							]
-						},
-						{
-							"text": "",
-							"extra": [
-								{
-									"text": "\"𝙏𝙖𝙠𝙚 𝙢𝙚 𝙩𝙤 𝙩𝙝𝙚 𝙧𝙞𝙫𝙚𝙧, 𝘿𝙧𝙤𝙥 𝙢𝙚 𝙞𝙣 𝙩𝙝𝙚 𝙬𝙖𝙩𝙚𝙧\"",
-									"color": "#7B9F90",
-									"bold": false,
-									"italic": false,
-									"underlined": false,
-									"strikethrough": false,
-									"obfuscated": false
-								}
-							]
-						}
-					]
-				],
-				"model": {
-					"type": "minecraft:model",
-					"model": "siteb:item/decoration/trophies/fishtrophy"
-				}
-			},
+      {
+        "when": [
+          [
+            {
+              "text": "",
+              "extra": [
+                {
+                  "text": "ʙɪɢɢᴇꜱᴛ ᴄᴀᴛᴄʜ ꜰᴏʀ ᴛʜᴇ ʙɪɢɢᴇꜱᴛ ᴄʜᴀᴍᴘ",
+                  "color": "#7B819F",
+                  "bold": false,
+                  "italic": true,
+                  "underlined": false,
+                  "strikethrough": false,
+                  "obfuscated": false
+                }
+              ]
+            },
+            {
+              "text": "",
+              "extra": [
+                {
+                  "text": "\"𝙏𝙖𝙠𝙚 𝙢𝙚 𝙩𝙤 𝙩𝙝𝙚 𝙧𝙞𝙫𝙚𝙧, 𝘿𝙧𝙤𝙥 𝙢𝙚 𝙞𝙣 𝙩𝙝𝙚 𝙬𝙖𝙩𝙚𝙧\"",
+                  "color": "#7B9F90",
+                  "bold": false,
+                  "italic": false,
+                  "underlined": false,
+                  "strikethrough": false,
+                  "obfuscated": false
+                }
+              ]
+            }
+          ]
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "siteb:item/decoration/trophies/fishtrophy"
+        }
+      },
       {
         "when": [
           {
@@ -938,13 +938,169 @@
       "component": "minecraft:custom_name",
       "cases": [
         {
-          "when": "6480",
+          "when": "Farmer's Hat",
           "model": {
             "type": "minecraft:model",
-            "model": "minecraft:item/clock_00"
+            "model": "siteb:item/equipment/hats/villager_hats/farmer_hat"
+          }
+        },
+        {
+          "when": "Crimson Fungus Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/mushroom_hats/crimson_fungus_hat"
+          }
+        },
+        {
+          "when": "Warped Fungus Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/mushroom_hats/warped_fungus_hat"
+          }
+        },
+        {
+          "when": "Brown Mushroom Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/mushroom_hats/brown_mushroom_hat"
+          }
+        },
+        {
+          "when": "Red Mushroom Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/mushroom_hats/red_mushroom_hat"
+          }
+        },
+        {
+          "when": "Black Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 3618118}]
+          }
+        },
+        {
+          "when": "Blue Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 4545214}]
+          }
+        },
+        {
+          "when": "Brown Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 13600856}]
+          }
+        },
+        {
+          "when": "Cyan Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 2795938}]
+          }
+        },
+        {
+          "when": "Gray Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 7368816}]
+          }
+        },
+        {
+          "when": "Green Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 7308061}]
+          }
+        },
+        {
+          "when": "Light Blue Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 3387597}]
+          }
+        },
+        {
+          "when": "Light Gray Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 10921638}]
+          }
+        },
+        {
+          "when": "Lime Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 10143537}]
+          }
+        },
+        {
+          "when": "Magenta Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 13588901}]
+          }
+        },
+        {
+          "when": "Orange Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 16357420}]
+          }
+        },
+        {
+          "when": "Pink Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 15699371}]
+          }
+        },
+        {
+          "when": "Purple Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 11028941}]
+          }
+        },
+        {
+          "when": "Red Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 14166827}]
+          }
+        },
+        {
+          "when": "White Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 15395562}]
+          }
+        },
+        {
+          "when": "Yellow Among Us Hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/equipment/hats/amongus_hat/among_us",
+            "tints": [{"type": "constant","value": 16440419}]
           }
         }
-			],
+      ],
       "fallback": {
         "type": "minecraft:select",
         "property": "minecraft:custom_model_data",

@@ -1,0 +1,8 @@
+{
+    "parent": "siteb:item/decoration/paintings/3x3/forest",
+    "textures": {
+        "0": "siteb:item/decoration/paintings/3x3/lonely_tree",
+        "particle": "siteb:item/decoration/paintings/3x3/lonely_tree",
+        "back": "siteb:item/decoration/paintings/3x2/back"
+    }
+}

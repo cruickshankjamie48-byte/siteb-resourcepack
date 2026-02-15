@@ -1,0 +1,6 @@
+{
+    "parent": "siteb:item/equipment/hats/mushroom_hats/crimson_fungus_hat",
+    "textures": {
+        "hat": "siteb:item/equipment/hats/mushroom_hats/brown_mushroom_hat"
+    }
+}

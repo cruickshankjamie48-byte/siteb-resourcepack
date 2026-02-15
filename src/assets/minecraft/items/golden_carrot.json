@@ -1,48 +1,237 @@
 {
-	"model": {
-		"type": "minecraft:select",
-		"property": "minecraft:component",
-		"component": "minecraft:custom_name",
-		"fallback": {
-			"type": "minecraft:model",
-			"model": "minecraft:item/golden_carrot"
-		},
-		"cases": [
-			{
-				"when": "Banana",
-				"model": {
-					"type": "minecraft:select",
-					"property": "minecraft:display_context",
-					"cases": [
-						{
-							"when": ["gui", "ground"],
-							"model": {
-								"type": "minecraft:model",
-								"model": "siteb:item/consumables/food/banana/banana_gui"
-							}
-						}
-					],
-					"fallback": {
-						"type": "minecraft:condition",
-						"property": "minecraft:using_item",
-						"on_true": {
-							"type": "minecraft:model",
-							"model": "siteb:item/consumables/food/banana/banana_eating"
-						},
-						"on_false": {
-							"type": "minecraft:model",
-							"model": "siteb:item/consumables/food/banana/banana"
-						}
-					}
-				}
-			},
-			{
-				"when": "Golden Potato",
-				"model": {
-					"type": "minecraft:model",
-					"model": "siteb:item/consumables/food/golden_potato"
-				}
-			}
-		]
-	}
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:lore",
+    "cases": [
+      {
+        "when": [
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "P",
+                "color": "#F1FF00",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "r",
+                "color": "#F3FB00",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "e",
+                "color": "#F5F700",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "m",
+                "color": "#F7F300",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "i",
+                "color": "#F9EF00",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "u",
+                "color": "#FBEB00",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "m ",
+                "color": "#FDE700",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "b",
+                "color": "#E6E309",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "a",
+                "color": "#CEE311",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "n",
+                "color": "#B5E31A",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "a",
+                "color": "#9DE423",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "n",
+                "color": "#84E42B",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "a",
+                "color": "#6BE434",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "'",
+                "color": "#53E43C",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              {
+                "text": "s",
+                "color": "#3AE445",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              }
+            ]
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "siteb:item/consumables/food/banana/banana"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:custom_name",
+      "cases": [
+        {
+          "when": "Golden Potato",
+          "model": {
+            "type": "minecraft:model",
+            "model": "siteb:item/consumables/food/golden_potato"
+          }
+        },
+        {
+          "when": "Banana",
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": "gui",
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "siteb:item/consumables/food/banana/banana_gui"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:condition",
+              "property": "minecraft:using_item",
+              "on_true": {
+                "type": "minecraft:model",
+                "model": "siteb:item/consumables/food/banana/banana_eating"
+              },
+              "on_false": {
+                "type": "minecraft:model",
+                "model": "siteb:item/consumables/food/banana/banana"
+              }
+            }
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "cases": [
+          {
+            "when": "Banana",
+            "model": {
+              "type": "minecraft:select",
+              "property": "minecraft:display_context",
+              "cases": [
+                {
+                  "when": "gui",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "siteb:item/consumables/food/banana/banana_gui"
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "minecraft:condition",
+                "property": "minecraft:using_item",
+                "on_true": {
+                  "type": "minecraft:model",
+                  "model": "siteb:item/consumables/food/banana/banana_eating"
+                },
+                "on_false": {
+                  "type": "minecraft:model",
+                  "model": "siteb:item/consumables/food/banana/banana"
+                }
+              }
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/golden_carrot"
+        }
+      }
+    }
+  }
 }

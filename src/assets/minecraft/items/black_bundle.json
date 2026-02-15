@@ -33,12 +33,33 @@
       "component": "minecraft:custom_name",
       "cases": [
         {
-          "when": "6480",
-          "model": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/black_bundle"
+            "when": "Present",
+            "model": {
+              "type": "range_dispatch",
+              "property": "bundle/fullness",
+              "scale": 64,
+              "entries": [
+                {
+                  "threshold": 0,
+                  "model": {
+                    "type": "model",
+                    "model": "siteb:item/decoration/presents/black_gift_empty"
+                  }
+                },
+                {
+                  "model": {
+                    "type": "model",
+                    "model": "siteb:item/decoration/presents/black_gift"
+                  },
+                  "threshold": 1
+                }
+              ],
+              "fallback": {
+                "type": "model",
+                "model": "minecraft:item/black_bundle"
+              }
+            }
           }
-        }
       ],
       "fallback": {
         "type": "minecraft:select",
